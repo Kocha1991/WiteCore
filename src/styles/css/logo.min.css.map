@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,UAAM,AAAC,CACL,UAAU,CAAE,GAAG,CACf,KAAK,CAAE,KAAK,CACZ,eAAe,CAAE,MAAM,CACvB,UAAU,CAAE,KAAK,CAClB",
+    "sources": [
+        "../bloc/logo.scss"
+    ],
+    "names": [],
+    "file": "logo.min.css"
+}

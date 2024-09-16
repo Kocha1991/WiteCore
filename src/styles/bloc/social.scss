@@ -1,0 +1,20 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  & a {
+    svg path {
+      fill: #C6C8D9;
+      transition: $transition;
+    }
+  
+    &:hover {
+      svg path {
+        transition: $transition;
+        fill: $color-hover-link;
+      }
+    }
+  }
+}

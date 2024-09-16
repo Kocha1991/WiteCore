@@ -1,0 +1,44 @@
+@import './utils/reset.scss';
+@import './utils/fonts.scss';
+@import './utils/vars.scss';
+@import './utils/extend.scss';
+@import './utils/global.scss';
+
+// Bloc
+@import './bloc/header.scss';
+@import './bloc/footer.scss';
+@import './bloc/logo.scss';
+@import './bloc/navigation.scss';
+@import './bloc/button.scss';
+@import './bloc/social.scss';
+@import './bloc/banner.scss';
+@import './bloc/burger-menu.scss';
+@import './bloc/seo.scss';
+@import './bloc/partners.scss';
+@import "./bloc/offers.scss";
+
+* {
+  color: $color-main-text;
+  font-family: $font;
+  box-sizing: border-box;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $color-hover-link;
+    transition: $transition;
+  }
+}
+body {
+  position: relative;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Days One',
+    'AA Duke', 'Inter', 'Gilroy',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $color-body;
+}
+
