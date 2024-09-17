@@ -1,0 +1,97 @@
+.reviews {
+  padding: 100px 0;
+  position: relative;
+  width: 100%;
+  @extend .frame;
+  border-width: 2.5px 0 2.5px 0;
+  overflow: hidden;
+  &::before {
+    content: '';
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+    top: -250px;
+    left: -200px;
+    background-image: url('../images/large-glowing-circle.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+  &::after {
+    content: '';
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+    bottom: -250px;
+    right: -600px;
+    background-image: url('../images/large-glowing-circle.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+  & .title {
+    margin-bottom: 90px;
+  }
+  &__slider {
+    margin-bottom: 40px;
+  }
+  &__slide {
+    min-height: 410px;
+    @extend .frame;
+    border-width: 2.5px 0 2.5px 0;
+    padding: 30px;
+    &__avatar {
+      display: block;
+      margin: 0 auto;
+      width: 86px;
+      height: 86px;
+      border-radius: 100%;
+      margin-bottom: 22px;
+    }
+    &__name {
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    &__status {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      color: $color-hover-link;
+      margin-bottom: 5px;
+    }
+    &__data {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.64px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &__descr {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+    }
+  }
+  & .btn-opacity {
+    display: block;
+    margin: 0 auto;
+  }
+}

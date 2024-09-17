@@ -1,14 +1,51 @@
 .offers {
   position: relative;
+  &__casino-phone {
+    display: none;
+    @media (max-width:992px) {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      padding: 15px;
+      max-width: 400px;
+      height: 225px;
+      background: url('../images/casino-phone.png') no-repeat center/ contain;
+      & img {
+        width: 312px;
+      }
+    }
+  }
   &__casino {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     padding: 45px;
     width: 100%;
-    height: 695px;
+    border-radius: 40px;
     background: url('../images/casino.png') no-repeat center/cover;
+    margin-bottom: 65px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 120px;
+      bottom: -120px;
+      left: 0;
+      background: url('../images/streams-revers.png') no-repeat center/cover;
+
+    }
+    @media (max-width:992px) {
+      background: transparent;
+      padding: 0;
+    }
+    &__web-bloc {
+      display: block;
+      @media (max-width:992px) {
+        display: none;
+      }
+    }
     &__text {
       font-family: Roboto;
       font-size: 20px;
@@ -20,6 +57,12 @@
         color: $color-hover-link;
       }
     }
+    &__phone-bloc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__items {
     width: 100%;
@@ -27,6 +70,9 @@
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    @media (max-width: 992px) {
+      gap: 10px;
+    }
   }
   &__item {
     position: relative;
@@ -42,6 +88,16 @@
     border-width: 2.5px 0 2.5px 0;
     @extend .frame;
     backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      transition: $transition;
+      scale: 105%;
+    }
+    @media (max-width: 992px) {
+      width: 189px;
+      padding: 10px;
+    }
     &:before {
       content: '';
       position: absolute;
@@ -53,6 +109,10 @@
       background: url('../images/web-small.png') no-repeat center/contain;
       z-index: 0;
       opacity: 0.7;
+      @media (max-width: 992px) {
+        top: -23px;
+        background: url('../images/web-small-phone.png') no-repeat center/contain;
+      }
     }
     & img {
       width: 80px;
@@ -66,5 +126,10 @@
       line-height: 20.16px;
       text-align: center;
     }
+  }
+  & .btn-opacity {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
   }
 }

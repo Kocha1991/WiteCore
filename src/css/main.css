@@ -125,7 +125,7 @@ table {
   font-style: normal;
   font-display: swap;
 }
-.frame, .offers__item, .partners__training, .partners__item, .seo, .banner {
+.frame, .our-blog__slide, .reviews__slide, .reviews, .offers__item, .partners__training, .partners__item, .seo, .banner {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.4);
   border-radius: 30px;
@@ -243,6 +243,104 @@ body.no-scroll {
   .p-b {
     padding-bottom: 60px;
   }
+}
+
+.streams {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 992px) {
+  .streams {
+    height: 120px;
+  }
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  margin-right: 15px;
+}
+
+.slick-slide:last-child {
+  margin-right: 0;
+}
+
+.slick-dots {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(54, 28, 89, 0.9);
+  border-radius: 30px;
+}
+
+.slick-dots li {
+  margin: 0 3px;
+}
+
+.slick-dots li button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.slick-dots li button::before,
+.slick-dots li button::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 128, 0, 0.2);
+  border-radius: 50%;
+}
+
+.slick-dots li button::after {
+  content: none;
+}
+
+.slick-dots li.slick-active button::before {
+  background-color: rgb(34, 178, 154);
+  opacity: 1;
+}
+
+.slick-dots button {
+  font-size: 0;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  bottom: 5px;
+  background-color: transparent;
+  border: none;
+  width: 14px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slick-prev {
+  background-image: url("../images/arr-prev.svg");
+  left: 20%;
+}
+
+.slick-next {
+  background-image: url("../images/arr-next.svg");
+  right: 20%;
 }
 
 .header {
@@ -498,7 +596,7 @@ body.no-scroll {
 
 .btn-main {
   position: relative;
-  height: 78px;
+  height: 72px;
   background-color: rgb(34, 178, 154);
   border: 1px solid rgb(34, 178, 154);
   transition: 0.3s all ease-in-out;
@@ -518,7 +616,7 @@ body.no-scroll {
   position: absolute;
   top: -1px;
   width: 27px;
-  height: 79px;
+  height: 72px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -543,6 +641,46 @@ body.no-scroll {
 .btn-main:hover {
   transition: 0.3s all ease-in-out;
   background-color: transparent;
+}
+
+.btn-opacity {
+  position: relative;
+  min-width: 300px;
+  height: 70px;
+  background-color: transparent;
+  border: 1px solid rgb(34, 178, 154);
+  transition: 0.3s all ease-in-out;
+  font-family: Days One;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.37px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .btn-opacity {
+    min-width: 90%;
+  }
+}
+.btn-opacity:hover {
+  background-color: rgb(34, 178, 154);
+  transition: 0.3s all ease-in-out;
+}
+.btn-opacity:before, .btn-opacity::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 50px;
+  background-color: rgb(34, 178, 154);
+}
+.btn-opacity:before {
+  left: -5px;
+}
+.btn-opacity::after {
+  right: -5px;
 }
 
 .btn-play {
@@ -873,6 +1011,7 @@ body.no-scroll {
 }
 
 .partners {
+  padding-top: 120px;
   position: relative;
   overflow: hidden;
 }
@@ -882,7 +1021,7 @@ body.no-scroll {
 }
 .partners::before {
   content: "";
-  width: 1000px;
+  width: 1200px;
   height: 1000px;
   position: absolute;
   top: -50px;
@@ -1148,15 +1287,57 @@ body.no-scroll {
 .offers {
   position: relative;
 }
+.offers__casino-phone {
+  display: none;
+}
+@media (max-width: 992px) {
+  .offers__casino-phone {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 15px;
+    max-width: 400px;
+    height: 225px;
+    background: url("../images/casino-phone.png") no-repeat center/contain;
+  }
+  .offers__casino-phone img {
+    width: 312px;
+  }
+}
 .offers__casino {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
   padding: 45px;
   width: 100%;
-  height: 695px;
+  border-radius: 40px;
   background: url("../images/casino.png") no-repeat center/cover;
+  margin-bottom: 65px;
+}
+.offers__casino::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  bottom: -120px;
+  left: 0;
+  background: url("../images/streams-revers.png") no-repeat center/cover;
+}
+@media (max-width: 992px) {
+  .offers__casino {
+    background: transparent;
+    padding: 0;
+  }
+}
+.offers__casino__web-bloc {
+  display: block;
+}
+@media (max-width: 992px) {
+  .offers__casino__web-bloc {
+    display: none;
+  }
 }
 .offers__casino__text {
   font-family: Roboto;
@@ -1169,12 +1350,23 @@ body.no-scroll {
 .offers__casino__text span {
   color: rgb(34, 178, 154);
 }
+.offers__casino__phone-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .offers__items {
   width: 100%;
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .offers__items {
+    gap: 10px;
+  }
 }
 .offers__item {
   position: relative;
@@ -1189,6 +1381,18 @@ body.no-scroll {
   text-align: center;
   border-width: 2.5px 0 2.5px 0;
   backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.offers__item:hover {
+  transition: 0.3s all ease-in-out;
+  scale: 105%;
+}
+@media (max-width: 992px) {
+  .offers__item {
+    width: 189px;
+    padding: 10px;
+  }
 }
 .offers__item:before {
   content: "";
@@ -1202,6 +1406,12 @@ body.no-scroll {
   z-index: 0;
   opacity: 0.7;
 }
+@media (max-width: 992px) {
+  .offers__item:before {
+    top: -23px;
+    background: url("../images/web-small-phone.png") no-repeat center/contain;
+  }
+}
 .offers__item img {
   width: 80px;
   height: 80px;
@@ -1213,6 +1423,212 @@ body.no-scroll {
   font-weight: 600;
   line-height: 20.16px;
   text-align: center;
+}
+.offers .btn-opacity {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews {
+  padding: 100px 0;
+  position: relative;
+  width: 100%;
+  border-width: 2.5px 0 2.5px 0;
+  overflow: hidden;
+}
+.reviews::before {
+  content: "";
+  width: 1200px;
+  height: 1000px;
+  position: absolute;
+  top: -250px;
+  left: -200px;
+  background-image: url("../images/large-glowing-circle.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 650px) {
+  .reviews::before {
+    display: none;
+  }
+}
+.reviews::after {
+  content: "";
+  width: 1200px;
+  height: 1000px;
+  position: absolute;
+  bottom: -250px;
+  right: -600px;
+  background-image: url("../images/large-glowing-circle.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 650px) {
+  .reviews::after {
+    display: none;
+  }
+}
+.reviews .title {
+  margin-bottom: 90px;
+}
+.reviews__slider {
+  margin-bottom: 40px;
+}
+.reviews__slide {
+  min-height: 410px;
+  border-width: 2.5px 0 2.5px 0;
+  padding: 30px;
+}
+.reviews__slide__avatar {
+  display: block;
+  margin: 0 auto;
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  margin-bottom: 22px;
+}
+.reviews__slide__name {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.reviews__slide__status {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(34, 178, 154);
+  margin-bottom: 5px;
+}
+.reviews__slide__data {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.64px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.reviews__slide__descr {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+.reviews .btn-opacity {
+  display: block;
+  margin: 0 auto;
+}
+
+.our-blog {
+  margin-top: -120px;
+  position: relative;
+  overflow: hidden;
+}
+.our-blog::before {
+  content: "";
+  width: 800px;
+  height: 700px;
+  position: absolute;
+  top: 0px;
+  left: -200px;
+  background-image: url("../images/large-glowing-circle.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 650px) {
+  .our-blog::before {
+    display: none;
+  }
+}
+.our-blog::after {
+  content: "";
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  bottom: -100px;
+  right: -300px;
+  background-image: url("../images/large-glowing-circle.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@media (max-width: 650px) {
+  .our-blog::after {
+    display: none;
+  }
+}
+.our-blog__slider {
+  margin-bottom: 30px;
+}
+.our-blog__slide {
+  border-width: 2.5px 0 2.5px 0;
+}
+.our-blog__slide__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+}
+.our-blog__slide__wrapper {
+  padding: 30px 15px;
+}
+.our-blog__slide__wrapper .btn-opacity {
+  min-width: 80%;
+}
+.our-blog__slide__bloc {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.our-blog__slide__bloc p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.16px;
+  color: rgb(198, 200, 217);
+}
+.our-blog__slide__time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 15px;
+  background: linear-gradient(0deg, #DB2EFE 8.22%, #6C37B1 57.47%, #430877 125.48%);
+  border-radius: 5px;
+  box-shadow: 0 0 15px 10px rgba(216, 88, 248, 0.3);
+}
+.our-blog__slide__time p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.64px;
+}
+.our-blog__slide__descr {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.our-blog .btn-opacity {
+  display: block;
+  margin: 0 auto;
 }
 
 * {
