@@ -354,14 +354,19 @@ body.no-scroll {
   }
 }
 
-.reviews .slick-center {
+.reviews .slick-current {
   z-index: 10;
   opacity: 1;
   transition: 0.3s all ease-in-out;
+  box-shadow: 0 0 5px 5px rgba(216, 88, 248, 0.2);
+  background: linear-gradient(-55deg, #DB2EFE 8.22%, #6C37B1 57.47%, #430877 125.48%);
 }
 
 .reviews .slick-slide:not(.slick-center) {
+  position: relative;
   transform: scale(0.8);
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .our-blog .slick-slide {
