@@ -1908,6 +1908,9 @@ body.no-scroll {
     margin: 20px 0;
   }
 }
+.form__radio-box label {
+  width: max-content;
+}
 .form__checkbox-box {
   margin: 40px 0 20px;
 }
@@ -1923,12 +1926,13 @@ body.no-scroll {
 }
 .form__checkbox-grid label {
   margin-top: 14px;
+  width: max-content;
 }
 .form .btn-main {
   margin: 70px auto 0;
   width: 100%;
   max-width: 400px;
-  font-family: Days One, sans-serif;
+  font-family: "Days One", sans-serif;
 }
 @media (max-width: 992px) {
   .form .btn-main {
