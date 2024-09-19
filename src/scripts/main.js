@@ -100,4 +100,12 @@ $(document).ready(function() {
       }
     ]
   });
+
+  // Раскрытие списка на странице регистрации
+  $(".select-text").on("click", function() {
+    $(this).toggleClass("open");
+    $(this).parent().find(".form__checkbox-grid").slideToggle();
+    $(this).parents(".select-wrapper").toggleClass("open");;
+  })
+  
 });

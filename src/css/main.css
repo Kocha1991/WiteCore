@@ -126,7 +126,7 @@ table {
   font-style: normal;
   font-display: swap;
 }
-.frame, .our-blog__slide, .reviews__slide, .reviews, .offers__item, .partners__training, .partners__item, .seo, .banner {
+.frame, .form .select-wrapper, .form textarea, .form input:not([type=radio]), .our-blog__slide, .reviews__slide, .reviews, .offers__item, .partners__training, .partners__item, .seo, .banner {
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.4);
   border-radius: 30px;
@@ -137,6 +137,7 @@ table {
   margin: 0 auto;
   max-width: 1340px;
   padding: 0 20px;
+  position: relative;
 }
 
 body.no-scroll {
@@ -365,14 +366,14 @@ body.no-scroll {
 }
 
 .partner-search__slider .slide {
-  flex: 1 1 calc(50% - 10px);
-  margin: 5px;
-  height: 200px; 
+  flex: 1 1 calc(50% - 10px); /* Задайте ширину слайдів на 50% мінус відстань між слайдами */
+  margin: 5px; /* Відстань між слайдами */
+  height: 200px; /* Висота слайдів */
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ddd;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Щоб padding і border не впливали на ширину */
 }
 
 .slick-slide {
@@ -382,7 +383,7 @@ body.no-scroll {
 }
 
 .slick-slide.slick-center {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Збільшення центрального слайда */
 }
 
 .header {
@@ -450,7 +451,7 @@ body.no-scroll {
 .header .lan {
   padding-left: 6px;
   border-left: 1px solid rgba(74, 28, 143, 0.4117647059);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -464,7 +465,7 @@ body.no-scroll {
 }
 .header .dropdown-lan .dropdown-menu li > a {
   color: #fff;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -523,7 +524,7 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 18.9px;
@@ -575,7 +576,7 @@ body.no-scroll {
 .navigation a {
   position: relative;
   color: #fff;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -615,7 +616,7 @@ body.no-scroll {
   border-radius: 50px;
   background-color: transparent;
   transition: 0.3s all ease-in-out;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1733,6 +1734,368 @@ body.no-scroll {
   color: rgb(34, 178, 154);
 }
 
+.entry {
+  position: relative;
+  background-size: cover;
+}
+@media (max-width: 992px) {
+  .entry {
+    background-image: none !important;
+  }
+}
+.entry.registration {
+  background-image: url(../images/reg_bg.png);
+}
+.entry.login {
+  background-image: url(../images/login_bg.png);
+}
+.entry .container {
+  max-width: 690px;
+}
+.entry .title {
+  font-size: 96px;
+  line-height: 96px;
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .entry .title {
+    font-size: 52px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 992px) {
+  .entry .title span {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+.entry .text-login {
+  position: relative;
+  z-index: 1;
+  padding: 70px 0 180px;
+}
+@media (max-width: 992px) {
+  .entry .text-login {
+    padding: 50px 0 60px;
+  }
+}
+.entry .success_img {
+  max-width: 298px;
+  margin: 33px auto 24px;
+}
+
+.form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.form__input {
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+.form__input::placeholder {
+  color: #fff;
+  text-align: center;
+}
+.form input:not([type=radio]) {
+  border-width: 2.5px 0px 2.5px 0px;
+  height: 74px;
+  padding: 0 30px;
+  outline: none;
+}
+.form input:not([type=radio]):focus {
+  border-color: #22ac97;
+}
+.form textarea {
+  font-family: Roboto, sans-serif;
+  border-width: 2.5px 0px 2.5px 0px;
+  resize: none;
+  width: 100%;
+  margin-top: 20px;
+  height: 195px;
+  padding: 30px;
+  outline: none;
+}
+@media (max-width: 992px) {
+  .form textarea {
+    margin-top: 16px;
+    height: 160px;
+  }
+}
+.form textarea::placeholder {
+  color: #fff;
+  text-align: center;
+}
+.form textarea:focus {
+  border-color: #22ac97;
+}
+.form .select-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  border-width: 2.5px 0px 2.5px 0px;
+}
+.form .select-wrapper.open {
+  border-color: #22ac97;
+}
+.form .select-wrapper .select-text {
+  position: relative;
+  width: max-content;
+  margin: auto;
+  cursor: pointer;
+}
+.form .select-wrapper .select-text::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  right: -30px;
+  margin: auto;
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.0413 1.125L7.49967 6.66667L1.95801 1.125' stroke='%2322AC97' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 19px;
+  height: 9px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.form .select-wrapper .select-text.open::after {
+  content: "";
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.form .select-wrapper .form__checkbox-grid {
+  justify-items: flex-start;
+  display: none;
+}
+.form .select-wrapper .form__checkbox-grid[style*="display: block"] {
+  display: grid !important;
+  column-gap: 20px;
+  padding-left: 30px;
+}
+.form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 992px) {
+  .form__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+.form__flex {
+  margin-top: 20px;
+}
+@media (max-width: 992px) {
+  .form__flex {
+    margin-top: 16px;
+  }
+}
+.form__radio-box {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .form__radio-box {
+    margin: 20px 0;
+  }
+}
+.form__checkbox-box {
+  margin: 40px 0 20px;
+}
+@media (max-width: 992px) {
+  .form__checkbox-box {
+    margin: 20px 0 16px;
+  }
+}
+.form__checkbox-grid {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form__checkbox-grid label {
+  margin-top: 14px;
+}
+.form .btn-main {
+  margin: 70px auto 0;
+  width: 100%;
+  max-width: 400px;
+  font-family: Days One, sans-serif;
+}
+@media (max-width: 992px) {
+  .form .btn-main {
+    margin: 50px auto 0;
+  }
+}
+@media (max-width: 576px) {
+  .form .btn-main {
+    width: calc(100vw - 90px);
+  }
+}
+
+.text {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Roboto, sans-serif;
+}
+
+.text-login {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #c6c8d9;
+}
+.text-login a {
+  color: rgb(34, 172, 151);
+}
+
+.forgot__password {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.16px;
+  text-align: center;
+  color: #22AC97;
+  margin-top: 16px;
+}
+
+.btn__login {
+  max-width: 298px !important;
+}
+
+.frog__login {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 566px;
+}
+@media (max-width: 992px) {
+  .frog__login {
+    display: none;
+  }
+}
+
+/* для элемента input c type="radio" */
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.16px;
+  color: #C6C8D9;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio > span::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #c6c8d9;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+/* стили для активной радиокнопки (при нажатии на неё) */
+/* стили для радиокнопки, находящейся в фокусе */
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio > input:checked + span::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='8' fill='%2322AC97'/%3E%3C/svg%3E%0A");
+  background-size: 75%;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.64px;
+  color: #c6c8d9;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox > span::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #c6c8d9;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+/* стили для активного чекбокса (при нажатии на него) */
+/* стили для чекбокса, находящегося в фокусе */
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox > input:checked + span::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' fill='%2322AC97'/%3E%3C/svg%3E%0A");
+  background-size: 75%;
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox > input:disabled + span::before {
+  background-color: #e9ecef;
+}
+
+.breadcrumbs {
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  left: 55px;
+  z-index: 5;
+  top: -80px;
+}
+.breadcrumbs .breadcrumb-item a {
+  color: #22AC97;
+}
+.breadcrumbs .breadcrumb-item.active, .breadcrumbs .breadcrumb-item::before {
+  color: #9B9B9B;
+}
+
 * {
   color: rgb(249, 250, 251);
   font-family: Roboto, sans-serif;
@@ -1752,10 +2115,18 @@ a:hover {
 body {
   position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Days One", "AA Duke", "Inter", "Gilroy", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #0F0926;
+}
+
+.section-body {
+  padding-top: 250px;
+}
+@media (max-width: 992px) {
+  .section-body {
+    padding-top: 158px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
