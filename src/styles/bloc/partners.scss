@@ -86,13 +86,13 @@
       }
     }
     & p {
-      font-family: Roboto;
+      font-family: $Font-Roboto;
       font-size: 20px;
       font-weight: 700;
       line-height: 29.4px;
       text-align: left;
       @media (max-width: 992px) {
-        font-family: Roboto;
+        font-family: $Font-Roboto;
         font-size: 14px;
         font-weight: 600;
         line-height: 20.58px;
@@ -196,7 +196,7 @@
     }
     &__subtitle {
       position: relative;
-      font-family: Roboto;
+      font-family: $Font-Roboto;
       font-size: 58px;
       font-weight: 700;
       line-height: 67px;
@@ -210,7 +210,7 @@
         line-height: 40px;
       }
       @media (max-width: 800px) {
-        font-family: Roboto;
+        font-family: $Font-Roboto;
         font-size: 22px;
         line-height: 23px;
         width: 100%;
