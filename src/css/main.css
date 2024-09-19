@@ -366,24 +366,17 @@ body.no-scroll {
 }
 
 .partner-search__slider .slide {
-  flex: 1 1 calc(50% - 10px); /* Задайте ширину слайдів на 50% мінус відстань між слайдами */
-  margin: 5px; /* Відстань між слайдами */
-  height: 200px; /* Висота слайдів */
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ddd;
-  box-sizing: border-box; /* Щоб padding і border не впливали на ширину */
+  box-sizing: border-box;
 }
 
 .slick-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.slick-slide.slick-center {
-  transform: scale(1.1); /* Збільшення центрального слайда */
 }
 
 .header {
