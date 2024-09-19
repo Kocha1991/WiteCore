@@ -5,6 +5,9 @@
   @extend .frame;
   border-width: 2.5px 0 2.5px 0;
   overflow: hidden;
+  @media (max-width: 992px) {
+    padding: 40px 0;
+  }
   &::before {
     content: '';
     width: 1200px;
@@ -12,7 +15,7 @@
     position: absolute;
     top: -250px;
     left: -200px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url('/src/images/large-glowing-circle.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +31,7 @@
     position: absolute;
     bottom: -250px;
     right: -600px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url('/src/images/large-glowing-circle.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,12 +42,15 @@
   }
   & .title {
     margin-bottom: 90px;
+    @media (max-width: 992px) {
+      margin-bottom: 40px;
+    }
   }
   &__slider {
     margin-bottom: 40px;
   }
   &__slide {
-    min-height: 410px;
+    min-height: 500px;
     @extend .frame;
     border-width: 2.5px 0 2.5px 0;
     padding: 30px;

@@ -2,6 +2,9 @@
   margin-top: -120px;
   position: relative;
   overflow: hidden;
+  @media (max-width: 992px) {
+    margin-top: -60px;
+  }
   &::before {
     content: '';
     width:800px;
@@ -9,7 +12,7 @@
     position: absolute;
     top: 0px;
     left: -200px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url('/src/images/large-glowing-circle.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,7 +28,7 @@
     position: absolute;
     bottom: -100px;
     right: -300px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url('/src/images/large-glowing-circle.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

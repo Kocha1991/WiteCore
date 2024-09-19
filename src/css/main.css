@@ -278,10 +278,6 @@ body.no-scroll {
   display: flex;
 }
 
-.slick-slide {
-  margin-right: 15px;
-}
-
 .slick-slide:last-child {
   margin-right: 0;
 }
@@ -354,6 +350,44 @@ body.no-scroll {
 .slick-next {
   background-image: url("../images/arr-next.svg");
   right: 20%;
+}
+
+.reviews .slick-center {
+  z-index: 10;
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
+}
+
+.reviews .slick-slide:not(.slick-center) {
+  transform: scale(0.8);
+}
+
+.our-blog .slick-slide {
+  margin-right: 15px;
+}
+
+.partner-search__slider {
+  position: relative;
+}
+
+.partner-search__slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partner-search__slider .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -636,11 +670,11 @@ body.no-scroll {
 }
 .btn-main::after {
   right: -25px;
-  background-image: url("../images/btn-main-right.png");
+  background-image: url("/src/images/btn-main-right.png");
 }
 .btn-main::before {
   left: -25px;
-  background-image: url("../images/btn-main-left.png");
+  background-image: url("/src/images/btn-main-left.png");
 }
 .btn-main .btn-main__streams {
   position: absolute;
@@ -755,7 +789,7 @@ body.no-scroll {
   position: absolute;
   top: -250px;
   left: -400px;
-  background-image: url("../images/large-glowing-circle.png");
+  background-image: url("/src/images/large-glowing-circle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -774,7 +808,7 @@ body.no-scroll {
   position: absolute;
   bottom: -255px;
   left: 0;
-  background-image: url("../images/streams.png");
+  background-image: url("/src/images/streams.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -984,7 +1018,7 @@ body.no-scroll {
   right: 0;
   bottom: 0;
   width: 800px;
-  background-image: url("../../images/seo-img.png");
+  background-image: url("/src/images/seo-img.png");
   object-position: center;
   object-fit: cover;
   z-index: -1;
@@ -1039,7 +1073,7 @@ body.no-scroll {
   position: absolute;
   top: -50px;
   left: -200px;
-  background-image: url("../images/large-glowing-circle.png");
+  background-image: url("/src/images/large-glowing-circle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1152,7 +1186,7 @@ body.no-scroll {
   width: 1000px;
   height: 1000px;
   overflow: hidden;
-  background: url("../images/video-frog.png") no-repeat center/cover;
+  background: url("/src/images/video-frog.png") no-repeat center/cover;
   z-index: -1;
 }
 @media (max-width: 1200px) {
@@ -1212,7 +1246,7 @@ body.no-scroll {
   bottom: -220px;
   width: 100%;
   height: 220px;
-  background: url("../images/streams-revers.png") no-repeat center/cover;
+  background: url("/src/images/streams-revers.png") no-repeat center/cover;
 }
 @media (max-width: 992px) {
   .partners__training:after {
@@ -1311,7 +1345,7 @@ body.no-scroll {
     padding: 15px;
     max-width: 400px;
     height: 225px;
-    background: url("../images/casino-phone.png") no-repeat center/contain;
+    background: url("/src/images/casino-phone.png") no-repeat center/contain;
   }
   .offers__casino-phone img {
     width: 312px;
@@ -1326,7 +1360,7 @@ body.no-scroll {
   padding: 45px;
   width: 100%;
   border-radius: 40px;
-  background: url("../images/casino.png") no-repeat center/cover;
+  background: url("/src/images/casino.png") no-repeat center/cover;
   margin-bottom: 65px;
 }
 .offers__casino::after {
@@ -1336,7 +1370,12 @@ body.no-scroll {
   height: 120px;
   bottom: -120px;
   left: 0;
-  background: url("../images/streams-revers.png") no-repeat center/cover;
+  background: url("/src/images/streams-revers.png") no-repeat center/cover;
+}
+@media (max-width: 992px) {
+  .offers__casino::after {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
   .offers__casino {
@@ -1415,14 +1454,14 @@ body.no-scroll {
   transform: translateX(-50%);
   width: 130px;
   height: 110px;
-  background: url("../images/web-small.png") no-repeat center/contain;
+  background: url("/src/images/web-small.png") no-repeat center/contain;
   z-index: 0;
   opacity: 0.7;
 }
 @media (max-width: 992px) {
   .offers__item:before {
     top: -23px;
-    background: url("../images/web-small-phone.png") no-repeat center/contain;
+    background: url("/src/images/web-small-phone.png") no-repeat center/contain;
   }
 }
 .offers__item img {
@@ -1450,6 +1489,11 @@ body.no-scroll {
   border-width: 2.5px 0 2.5px 0;
   overflow: hidden;
 }
+@media (max-width: 992px) {
+  .reviews {
+    padding: 40px 0;
+  }
+}
 .reviews::before {
   content: "";
   width: 1200px;
@@ -1457,7 +1501,7 @@ body.no-scroll {
   position: absolute;
   top: -250px;
   left: -200px;
-  background-image: url("../images/large-glowing-circle.png");
+  background-image: url("/src/images/large-glowing-circle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1475,7 +1519,7 @@ body.no-scroll {
   position: absolute;
   bottom: -250px;
   right: -600px;
-  background-image: url("../images/large-glowing-circle.png");
+  background-image: url("/src/images/large-glowing-circle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1489,11 +1533,16 @@ body.no-scroll {
 .reviews .title {
   margin-bottom: 90px;
 }
+@media (max-width: 992px) {
+  .reviews .title {
+    margin-bottom: 40px;
+  }
+}
 .reviews__slider {
   margin-bottom: 40px;
 }
 .reviews__slide {
-  min-height: 410px;
+  min-height: 500px;
   border-width: 2.5px 0 2.5px 0;
   padding: 30px;
 }
@@ -1548,6 +1597,11 @@ body.no-scroll {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 992px) {
+  .our-blog {
+    margin-top: -60px;
+  }
+}
 .our-blog::before {
   content: "";
   width: 800px;
@@ -1555,7 +1609,7 @@ body.no-scroll {
   position: absolute;
   top: 0px;
   left: -200px;
-  background-image: url("../images/large-glowing-circle.png");
+  background-image: url("/src/images/large-glowing-circle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1573,7 +1627,7 @@ body.no-scroll {
   position: absolute;
   bottom: -100px;
   right: -300px;
-  background-image: url("../images/large-glowing-circle.png");
+  background-image: url("/src/images/large-glowing-circle.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1644,6 +1698,46 @@ body.no-scroll {
   margin: 0 auto;
 }
 
+.partner-search__slide {
+  position: relative;
+}
+.partner-search__slide-img {
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+.partner-search__slide-title {
+  position: absolute;
+  top: 110px;
+  right: 200px;
+  font-family: Roboto;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 53.91px;
+  text-transform: uppercase;
+}
+.partner-search__slide-title::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 60%;
+  height: 2px;
+  background-color: rgb(34, 178, 154);
+}
+.partner-search__slide-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background-color: rgb(34, 178, 154);
+}
+.partner-search__slide-title::first-letter {
+  color: rgb(34, 178, 154);
+}
+
 .entry {
   position: relative;
   background-size: cover;
@@ -1654,10 +1748,10 @@ body.no-scroll {
   }
 }
 .entry.registration {
-  background-image: url(../images/reg_bg.png);
+  background-image: url("/src/images/reg_bg.png");
 }
 .entry.login {
-  background-image: url(../images/login_bg.png);
+  background-image: url("/src/images/login_bg.png");
 }
 .entry .container {
   max-width: 690px;
