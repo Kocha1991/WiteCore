@@ -92,13 +92,6 @@ table {
   font-display: swap;
 }
 @font-face {
-  font-family: Days One, sans-serif;
-  src: url("../../fonts/Days_One/DaysOne-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: AA Duke, sans-serif;
   src: url("../../fonts/AADuke/AADuke-Fill.woff");
   font-weight: 400;
@@ -220,7 +213,7 @@ body.no-scroll {
 }
 
 .subtitle {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -230,7 +223,6 @@ body.no-scroll {
 }
 @media (max-width: 992px) {
   .subtitle {
-    font-family: Roboto;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -388,6 +380,12 @@ body.no-scroll {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-opacity span,
+.btn-main span {
+  font-family: "Days One", sans-serif;
+  font-weight: 600;
 }
 
 .header {
@@ -648,7 +646,7 @@ body.no-scroll {
   border: 1px solid rgb(34, 178, 154);
   transition: 0.3s all ease-in-out;
   z-index: 10;
-  font-family: Days One;
+  font-family: "Days One", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.37px;
@@ -697,7 +695,7 @@ body.no-scroll {
   background-color: transparent;
   border: 1px solid rgb(34, 178, 154);
   transition: 0.3s all ease-in-out;
-  font-family: Days One;
+  font-family: "Days One", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.37px;
@@ -847,7 +845,7 @@ body.no-scroll {
 }
 .banner__wrapper {
   padding-top: 15%;
-  max-width: 700px;
+  max-width: 750px;
   display: flex;
   flex-direction: column;
 }
@@ -867,7 +865,7 @@ body.no-scroll {
   }
 }
 .banner__title {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 63px;
   font-weight: 700;
   line-height: 79.38px;
@@ -886,7 +884,7 @@ body.no-scroll {
 }
 .banner__descr {
   margin-bottom: 60px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -923,7 +921,7 @@ body.no-scroll {
 .menu li {
   text-decoration: none;
   list-style-type: none;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1049,7 +1047,7 @@ body.no-scroll {
   }
 }
 .seo__descr {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1161,7 +1159,7 @@ body.no-scroll {
   }
 }
 .partners__item p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 29.4px;
@@ -1169,7 +1167,7 @@ body.no-scroll {
 }
 @media (max-width: 992px) {
   .partners__item p {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 20.58px;
@@ -1286,7 +1284,7 @@ body.no-scroll {
 }
 .partners__training__subtitle {
   position: relative;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 58px;
   font-weight: 700;
   line-height: 67px;
@@ -1306,7 +1304,7 @@ body.no-scroll {
 }
 @media (max-width: 800px) {
   .partners__training__subtitle {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 22px;
     line-height: 23px;
     width: 100%;
@@ -1392,7 +1390,7 @@ body.no-scroll {
   }
 }
 .offers__casino__text {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 25.2px;
@@ -1470,7 +1468,7 @@ body.no-scroll {
   z-index: 10;
 }
 .offers__item__text {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 20.16px;
@@ -1555,7 +1553,7 @@ body.no-scroll {
   margin-bottom: 22px;
 }
 .reviews__slide__name {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -1564,7 +1562,7 @@ body.no-scroll {
   margin-bottom: 5px;
 }
 .reviews__slide__status {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1573,7 +1571,7 @@ body.no-scroll {
   margin-bottom: 5px;
 }
 .reviews__slide__data {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.64px;
@@ -1581,7 +1579,7 @@ body.no-scroll {
   margin-bottom: 20px;
 }
 .reviews__slide__descr {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -1664,7 +1662,7 @@ body.no-scroll {
   margin-bottom: 30px;
 }
 .our-blog__slide__bloc p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.16px;
@@ -1680,13 +1678,13 @@ body.no-scroll {
   box-shadow: 0 0 15px 10px rgba(216, 88, 248, 0.3);
 }
 .our-blog__slide__time p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 17.64px;
 }
 .our-blog__slide__descr {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -1710,7 +1708,7 @@ body.no-scroll {
   position: absolute;
   top: 110px;
   right: 200px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 46px;
   font-weight: 800;
   line-height: 53.91px;

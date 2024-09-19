@@ -62,7 +62,7 @@
       gap: 15px;
       margin-bottom: 30px;
       & p {
-        font-family: Roboto;
+        font-family: $Font-Roboto;
         font-size: 16px;
         font-weight: 400;
         line-height: 20.16px;
@@ -78,14 +78,14 @@
       border-radius: 5px;
       box-shadow: 0 0 15px 10px rgba(216, 88, 248, 0.3);
       & p {
-        font-family: Roboto;
+        font-family: $Font-Roboto;
         font-size: 14px;
         font-weight: 500;
         line-height: 17.64px;
       }
     }
     &__descr {
-      font-family: Roboto;
+      font-family: $Font-Roboto;
       font-size: 24px;
       font-weight: 600;
       line-height: 36px;
