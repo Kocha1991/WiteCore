@@ -107,5 +107,4 @@ $(document).ready(function() {
     $(this).parent().find(".form__checkbox-grid").slideToggle();
     $(this).parents(".select-wrapper").toggleClass("open");;
   })
-  
 });
