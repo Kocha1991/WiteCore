@@ -1,3 +1,7 @@
+.section-article {
+    background-image: url("../images/article_bg.png");
+    background-size: cover;
+}
 .article {
     &-meta {
         @extend .frame;
@@ -10,9 +14,26 @@
         max-width: 525px;
         margin-right: 35px;
     }
-    & .badge {
-        background: linear-gradient(339.93deg, #DB2EFE 8.22%, #6C37B1 57.47%, #430877 125.48%);
-
+    & .time {
+        background: linear-gradient(339.93deg, #db2efe 8.22%, #6c37b1 57.47%, #430877 125.48%);
+        box-shadow: 0px 3px 0px 0px #ffffff66;
+        box-shadow: 0px -3px 0px 0px #ffffff66;
+        box-shadow: 0px 0px 25.4px 0px #c02bea;
+        padding: 5px 30px;
+        font-family: $Font-Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.64px;
+        @extend .frame;
+        border-width: 2.5px 0px 2.5px 0px;
+        border-radius: 5px;
+    }
+    & .text {
+        font-family: $Font-Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.16px;
+        color: #c6c8d9;
     }
     & p {
         font-family: $Font-Roboto;
