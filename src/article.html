@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./fonts/AADuke/stylesheet.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Witecore</title>
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  <header class="header">
+    <a href="index.html" class='logo header__logo'>
+      <img src='./images/logo-img.png' alt="logo-image" class='logo__img'/>
+    </a>
+    <div class='navigation'>
+      <a href="#">Офферы</a>
+      <a href="#">Сотрудничество</a>
+      <a href="#">Обучение</a>
+      <a href="#">Блог</a>
+      <a href="#">Кнотакты</a>
+    </div>
+    <div class="header__btns-bloc">
+      <div class="dropdown dropdown-lan">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./images/ru-lan.svg" alt="English" class="lan-icon">
+          <span class="lan">RU</span>
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">RU</a></li>
+          <li><a class="dropdown-item" href="#">EN</a></li>
+        </ul>
+      </div>
+
+      <a href="login.html" class='btn-header'>
+        <span>Войти</span>
+        <img src='./images/exit.svg' alt="exit" />
+      </a>
+
+      <!-- burger menu media 992px -->
+      <div class="burger-menu">
+        <div class="bar">
+          <span class="bar-1"></span>
+          <span class="bar-2"></span>
+          <span class="bar-3"></span>
+        </div>
+      </div>
+      <div class="menu">
+        <li><a href="#">Офферы</a></li>
+        <li><a href="#">Сотрудничество</a></li>
+        <li><a href="#">Обучение</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Кнотакты</a></li>
+        <div class="dropdown dropdown-lan dropdown-lan--phone">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./images/ru-lan.svg" alt="English" class="lan-icon">
+            <span class="lan">RU</span>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">RU</a></li>
+            <li><a class="dropdown-item" href="#">EN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-body">
+    <div class="container">
+      <nav aria-label="breadcrumb" class="breadcrumbs">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Статья</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top-wrapper">
+        <a href="index.html" class='logo'>
+          <img src='./images/logo-img.png' alt="logo-image" class='logo__img'/>
+        </a>
+        <div class='navigation'>
+          <a href="#">Офферы</a>
+          <a href="#">Сотрудничество</a>
+          <a href="#">Обучение</a>
+          <a href="#">Блог</a>
+          <a href="#">Кнотакты</a>
+        </div>
+        <div class="social">
+          <a href="#">
+            <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9569 1.12901L1.24301 9.37085C0.369204 9.75466 0.0736593 10.5233 1.03181 10.9404L6.60235 12.6829L20.0712 4.48962C20.8066 3.97526 21.5595 4.11241 20.9116 4.67824L9.34372 14.9877L8.98035 19.3506C9.31692 20.0243 9.93318 20.0274 10.3263 19.6926L13.5267 16.7119L19.008 20.7519C20.2811 21.4937 20.9738 21.015 21.2477 19.6553L24.8429 2.89887C25.2162 1.2252 24.5796 0.487758 22.9569 1.12901Z" fill="#C6C8D9"/>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_131_1230)">
+              <path d="M16.631 12C16.631 12.7595 16.4011 13.5019 15.9702 14.1334C15.5393 14.7649 14.9268 15.2571 14.2103 15.5477C13.4937 15.8383 12.7052 15.9144 11.9446 15.7662C11.1839 15.618 10.4851 15.2523 9.93671 14.7153C9.38829 14.1783 9.01481 13.494 8.8635 12.7491C8.71219 12.0043 8.78985 11.2322 9.08665 10.5305C9.38346 9.82883 9.88608 9.2291 10.531 8.80716C11.1758 8.38521 11.934 8.16 12.7096 8.16C13.7486 8.16316 14.7442 8.56875 15.4789 9.28821C16.2136 10.0077 16.6278 10.9825 16.631 12ZM24.9641 6.72V17.28C24.9641 19.0623 24.2411 20.7715 22.9541 22.0318C21.6671 23.292 19.9216 24 18.1016 24H7.31761C5.49755 24 3.75204 23.292 2.46507 22.0318C1.17809 20.7715 0.455078 19.0623 0.455078 17.28V6.72C0.455078 4.93775 1.17809 3.22849 2.46507 1.96824C3.75204 0.707998 5.49755 0 7.31761 0H18.1016C19.9216 0 21.6671 0.707998 22.9541 1.96824C24.2411 3.22849 24.9641 4.93775 24.9641 6.72ZM18.5918 12C18.5918 10.8608 18.2468 9.74714 17.6004 8.79992C16.9541 7.85269 16.0354 7.11441 14.9606 6.67845C13.8858 6.24249 12.7031 6.12843 11.562 6.35068C10.421 6.57293 9.37291 7.12151 8.55027 7.92706C7.72764 8.73262 7.16742 9.75895 6.94045 10.8763C6.71349 11.9936 6.82997 13.1518 7.27518 14.2043C7.72039 15.2568 8.47432 16.1563 9.44164 16.7893C10.409 17.4222 11.5462 17.76 12.7096 17.76C14.2696 17.76 15.7658 17.1531 16.8689 16.0729C17.972 14.9927 18.5918 13.5276 18.5918 12ZM20.5525 5.76C20.5525 5.47519 20.4662 5.19679 20.3047 4.95998C20.1431 4.72317 19.9134 4.5386 19.6447 4.42961C19.376 4.32062 19.0803 4.29211 18.7951 4.34767C18.5098 4.40323 18.2478 4.54038 18.0421 4.74177C17.8365 4.94315 17.6964 5.19974 17.6397 5.47907C17.5829 5.7584 17.612 6.04794 17.7233 6.31106C17.8346 6.57419 18.0231 6.79909 18.265 6.95732C18.5068 7.11555 18.7911 7.2 19.0819 7.2C19.472 7.2 19.846 7.04829 20.1218 6.77823C20.3976 6.50818 20.5525 6.14191 20.5525 5.76Z" fill="#22AC97"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_131_1230">
+              <rect width="24.509" height="24" fill="white" transform="translate(0.455078)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.0293 13.936L14.4283 12.005L11.0293 10.0645V13.936Z" fill="#C6C8D9"/>
+              <path d="M12.7291 0C10.3054 0 7.93613 0.703788 5.92089 2.02236C3.90564 3.34094 2.33495 5.21509 1.40743 7.4078C0.479919 9.60051 0.237239 12.0133 0.710082 14.3411C1.18293 16.6689 2.35005 18.8071 4.06388 20.4853C5.7777 22.1635 7.96125 23.3064 10.3384 23.7694C12.7155 24.2324 15.1795 23.9948 17.4187 23.0866C19.658 22.1783 21.5718 20.6402 22.9184 18.6668C24.2649 16.6935 24.9836 14.3734 24.9836 12C24.9836 8.8174 23.6926 5.76516 21.3944 3.51472C19.0962 1.26428 15.9792 0 12.7291 0ZM19.1789 14.1237C19.1791 14.4375 19.1161 14.7484 18.9936 15.0384C18.8711 15.3284 18.6915 15.5919 18.4649 15.8139C18.2383 16.0359 17.9693 16.2121 17.6732 16.3322C17.3771 16.4524 17.0598 16.5142 16.7393 16.5142H8.719C8.39849 16.5142 8.08112 16.4524 7.78503 16.3322C7.48894 16.2121 7.21992 16.0359 6.99336 15.8139C6.7668 15.5919 6.58714 15.3284 6.46463 15.0384C6.34212 14.7484 6.27917 14.4375 6.27939 14.1237V9.87632C6.27917 9.56246 6.34212 9.25164 6.46463 8.96162C6.58714 8.6716 6.7668 8.40806 6.99336 8.18605C7.21992 7.96405 7.48894 7.78794 7.78503 7.66779C8.08112 7.54763 8.39849 7.48579 8.719 7.48579H16.7393C17.0598 7.48579 17.3771 7.54763 17.6732 7.66779C17.9693 7.78794 18.2383 7.96405 18.4649 8.18605C18.6915 8.40806 18.8711 8.6716 18.9936 8.96162C19.1161 9.25164 19.1791 9.56246 19.1789 9.87632V14.1237Z" fill="#C6C8D9"/>
+            </svg>
+          </a>
+          <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.411 0H4.08238C2.10291 0 0.492188 1.57727 0.492188 3.51562V20.4844C0.492188 22.4227 2.10291 24 4.08238 24H11.3106V15.5156H8.43848V11.2969H11.3106V8.4375C11.3106 6.11115 13.2432 4.21875 15.6189 4.21875H19.975V8.4375H15.6189V11.2969H19.975L19.2569 15.5156H15.6189V24H21.411C23.3905 24 25.0012 22.4227 25.0012 20.4844V3.51562C25.0012 1.57727 23.3905 0 21.411 0Z" fill="#C6C8D9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bot-wrapper">
+        <span>WhiteCore 2024 © All rights reserved</span>
+        <div class="footer__bot-wrapper_links">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./scripts/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/slick.min.js"></script>
+  <script src="./scripts/main.js" defer></script>
+</body>
+</html>

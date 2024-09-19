@@ -1,0 +1,15 @@
+.breadcrumbs {
+    font-family: $Font-Roboto;
+    position: absolute;
+    left: 55px;
+    z-index: 5;
+    bottom: 55px;
+    & .breadcrumb-item {
+        & a {
+            color: #22AC97;
+        }
+        &.active, &::before {
+            color: #9B9B9B;
+        }
+    }
+}

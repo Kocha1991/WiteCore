@@ -52,7 +52,7 @@
   & .lan {
     padding-left: 6px;
     border-left: 1px solid #4A1C8F69;
-    font-family: Roboto;
+    font-family: $Font-Roboto;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
@@ -66,7 +66,7 @@
     background: #4A1C8F69;
     & li > a {
       color: #fff;
-      font-family: Roboto;
+      font-family: $Font-Roboto;
       font-size: 12px;
       font-weight: 500;
       line-height: 16px;

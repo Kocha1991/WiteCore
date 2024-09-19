@@ -3,6 +3,7 @@
 @import './utils/vars.scss';
 @import './utils/extend.scss';
 @import './utils/global.scss';
+@import './utils/mixins.scss';
 
 // Bloc
 @import './bloc/header.scss';
@@ -18,10 +19,14 @@
 @import "./bloc/offers.scss";
 @import './bloc/reviews.scss';
 @import './bloc/our-blog.scss';
+@import './bloc/entry.scss';
+@import './bloc/radio.scss';
+@import './bloc/checkbox.scss';
+@import './bloc/breadcrumbs.scss';
 
 * {
   color: $color-main-text;
-  font-family: $font;
+  font-family: $Font-Roboto;
   box-sizing: border-box;
 }
 a {
@@ -36,11 +41,16 @@ a {
 body {
   position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Days One',
-    'AA Duke', 'Inter', 'Gilroy',
-    sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Days One',
+  //   'AA Duke', 'Inter', 'Gilroy',
+  //   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $color-body;
 }
-
+.section-body {
+    padding-top: 250px;
+    @include max-lg {
+        padding-top: 158px;
+    }
+}

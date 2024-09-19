@@ -1,0 +1,224 @@
+.entry {
+    position: relative;
+    background-size: cover;
+    @include max-lg {
+        background-image: none !important;
+    }
+    &.registration {
+        background-image: url(../images/reg_bg.png);
+    }
+    &.login {
+        background-image: url(../images/login_bg.png);
+    }
+    & .container {
+        max-width: 690px;
+    }
+    & .title {
+        font-size: 96px;
+        line-height: 96px;
+        margin-bottom: 0;
+        @include max-lg {
+            font-size: 52px;
+            line-height: 52px;
+        }
+        & span {
+            @include max-lg{
+                font-size: 48px;
+                line-height: 48px;
+            }
+        }
+    }
+    & .text-login {
+        position: relative;
+        z-index: 1;
+        padding: 70px 0 180px;
+        @include max-lg {
+            padding: 50px 0 60px;
+        }
+    }
+    & .success_img {
+        max-width: 298px;
+        margin: 33px auto 24px;
+    }
+}
+.form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    &__input {
+        width: 100%;
+        font-family: $Font-Roboto;
+        &::placeholder {
+            color: #fff;
+            text-align: center;
+        }
+    }
+    & input:not([type="radio"]) {
+        @extend .frame;
+        border-width: 2.5px 0px 2.5px 0px;
+        height: 74px;
+        padding: 0 30px;
+        outline: none;
+        &:focus {
+            border-color: #22ac97;
+        }
+    }
+    & textarea {
+        @extend .frame;
+        font-family: $Font-Roboto;
+        border-width: 2.5px 0px 2.5px 0px;
+        resize: none;
+        width: 100%;
+        margin-top: 20px;
+        height: 195px;
+        padding: 30px;
+        outline: none;
+        @include max-lg {
+            margin-top: 16px;
+            height: 160px;
+        }
+        &::placeholder {
+            color: #fff;
+            text-align: center;
+        }
+        &:focus {
+            border-color: #22ac97;
+        }
+    }
+    & .select-wrapper {
+        @extend .frame;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+        border-width: 2.5px 0px 2.5px 0px;
+        &.open {
+            border-color: #22ac97;
+        }
+        & .select-text {
+            position: relative;
+            width: max-content;
+            margin: auto;
+            cursor: pointer;
+        }
+        & .select-text::after {
+            content: "";
+            position: absolute;
+            right: 30px;
+            top: 0;
+            bottom: 0;
+            right: -30px;
+            margin: auto;
+            background-image: url("data:image/svg+xml,%3Csvg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.0413 1.125L7.49967 6.66667L1.95801 1.125' stroke='%2322AC97' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            width: 19px;
+            height: 9px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: 0.5s;
+        }
+        & .select-text.open::after {
+            content: "";
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+        & .form__checkbox-grid {
+            justify-items: flex-start;
+            display: none;
+        }
+        & .form__checkbox-grid[style*="display: block"] {
+            display: grid !important;
+            column-gap: 20px;
+            padding-left: 30px;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        flex-wrap: nowrap;
+        @include max-lg {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+    }
+    &__flex {
+        margin-top: 20px;
+        @include max-lg {
+            margin-top: 16px;
+        }
+    }
+    &__radio-box {
+        display: flex;
+        align-items: center;
+        @include max-lg {
+            margin: 20px 0;
+        }
+    }
+    &__checkbox-box {
+        margin: 40px 0 20px;
+        @include max-lg {
+            margin: 20px 0 16px;
+        }
+    }
+    &__checkbox-grid {
+        margin-top: 6px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        & label {
+            margin-top: 14px;
+        }
+    }
+    .btn-main {
+        margin: 70px auto 0;
+        width: 100%;
+        max-width: 400px;
+        font-family: Days One, sans-serif;
+        @include max-lg {
+            margin: 50px auto 0;
+        }
+        @include max-sm {
+            width: calc(100vw - 90px);
+        }
+    }
+}
+.text {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $Font-Roboto;
+}
+.text-login {
+    font-family: $Font-Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #c6c8d9;
+    & a {
+        color: rgb(34, 172, 151);
+    }
+}
+.forgot__password {
+    font-family: $Font-Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    text-align: center;
+    color: #22AC97;
+    margin-top: 16px;
+}
+.btn__login {
+    max-width: 298px !important;
+}
+.frog__login {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 566px;
+    @include max-lg{
+        display: none;
+    }
+    
+}
