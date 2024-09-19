@@ -74,31 +74,29 @@ $(document).ready(function() {
       }
     ]
   });
-  $('.partner-search__slider').slick({
+  $('#partner-search-slider-web').slick({
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 2, 
+    slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: false,
     centerPadding: '0',
     adaptiveHeight: true,
-    prevArrow: '.partner-search .slick-prev',
-    nextArrow: '.partner-search .slick-next',
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+    prevArrow: '.partner-search-slider-web .slick-prev',
+    nextArrow: '.partner-search-slider-web .slick-next',
+  });
+  $('#partner-search-slider-phone').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
+    centerPadding: '0',
+    adaptiveHeight: false,
+    prevArrow: '.partner-search-slider-phone .slick-prev',
+    nextArrow: '.partner-search-slider-phone .slick-next',
   });
 
   // Раскрытие списка на странице регистрации

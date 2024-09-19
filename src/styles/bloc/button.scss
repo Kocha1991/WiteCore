@@ -56,11 +56,11 @@
   } 
   &::after {
     right: -25px;
-    background-image: url('/src/images/btn-main-right.png');
+    background-image: url('../images/btn-main-right.png');
   }
   &::before {
     left: -25px;
-    background-image: url('/src/images/btn-main-left.png');
+    background-image: url('../images/btn-main-left.png');
   }
 
   & .btn-main__streams {

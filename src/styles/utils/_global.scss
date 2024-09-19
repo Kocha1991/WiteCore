@@ -116,8 +116,8 @@ body.no-scroll {
   margin: 0 auto;
   margin-top: 30px;
   width: fit-content;
+  height: 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 10px;
   background: rgba(54, 28, 89, 0.9);
@@ -156,7 +156,7 @@ body.no-scroll {
 .slick-prev,
 .slick-next {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   background-color: transparent;
   border: none;
   width: 14px;
@@ -166,11 +166,17 @@ body.no-scroll {
 }
 .slick-prev {
   background-image: url('../images/arr-prev.svg');
-  left: 20%;
+  left: 30%;
+  @media (max-width: 992px) {
+    left: 20%;
+  }
 }
 .slick-next {
   background-image: url('../images/arr-next.svg');
-  right: 20%;
+  right: 30%;
+  @media (max-width: 992px) {
+    right: 20%;
+  }
 }
 //reviews slider
 .reviews .slick-center {
@@ -187,31 +193,26 @@ body.no-scroll {
 .reviews .slick-slide:not(.slick-center) {
   transform: scale(0.8);
 }
-
 //our-blog slider
 .our-blog .slick-slide {
   margin-right: 15px;
 }
-
 .partner-search__slider {
   position: relative;
 }
-
 //partner-search slider
-.partner-search__slider {
+.partner-search__slider--web {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.partner-search__slider .slide {
+.partner-search__slider--web .slide {
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-
 .slick-slide {
   display: flex;
   align-items: center;

@@ -5,10 +5,10 @@
         background-image: none !important;
     }
     &.registration {
-        background-image: url('/src/images/reg_bg.png');
+        background-image: url('../images/reg_bg.png');
     }
     &.login {
-        background-image: url('/src/images/login_bg.png');
+        background-image: url('../images/login_bg.png');
     }
     & .container {
         max-width: 690px;
