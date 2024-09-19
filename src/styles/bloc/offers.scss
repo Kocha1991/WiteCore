@@ -9,7 +9,7 @@
       padding: 15px;
       max-width: 400px;
       height: 225px;
-      background: url('../images/casino-phone.png') no-repeat center/ contain;
+      background: url('/src/images/casino-phone.png') no-repeat center/ contain;
       & img {
         width: 312px;
       }
@@ -24,7 +24,7 @@
     padding: 45px;
     width: 100%;
     border-radius: 40px;
-    background: url('../images/casino.png') no-repeat center/cover;
+    background: url('/src/images/casino.png') no-repeat center/cover;
     margin-bottom: 65px;
     &::after {
       content: '';
@@ -33,7 +33,7 @@
       height: 120px;
       bottom: -120px;
       left: 0;
-      background: url('../images/streams-revers.png') no-repeat center/cover;
+      background: url('/src/images/streams-revers.png') no-repeat center/cover;
       @media (max-width: 992px) {
         display: none;
       }
@@ -108,12 +108,12 @@
       transform: translateX(-50%);
       width: 130px;
       height: 110px;
-      background: url('../images/web-small.png') no-repeat center/contain;
+      background: url('/src/images/web-small.png') no-repeat center/contain;
       z-index: 0;
       opacity: 0.7;
       @media (max-width: 992px) {
         top: -23px;
-        background: url('../images/web-small-phone.png') no-repeat center/contain;
+        background: url('/src/images/web-small-phone.png') no-repeat center/contain;
       }
     }
     & img {
