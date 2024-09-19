@@ -47,7 +47,7 @@ body.no-scroll {
 .title-line {
   position: relative;
   &::after {
-    content: '';
+    content: "";
     width: 55%;
     height: 1px;
     background-color: rgba(53, 210, 231, 1);
@@ -59,7 +59,7 @@ body.no-scroll {
     }
   }
   &::before {
-    content: '';
+    content: "";
     width: 55%;
     height: 1px;
     background-color: rgba(250, 112, 136, 0.9);
@@ -85,6 +85,16 @@ body.no-scroll {
     line-height: 24px;
     margin-bottom: 30px;
     text-align: center;
+  }
+}
+.section-title {
+  font-family: $Font-Roboto;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 70.8px;
+  color: #fff;
+  & span {
+    color: #22AC97;
   }
 }
 .p-b {
@@ -139,12 +149,12 @@ body.no-scroll {
 }
 .slick-dots li button::before,
 .slick-dots li button::after {
-  content: '';
+  content: "";
   display: block;
   width: 12px;
   height: 12px;
-  background-color: rgba(0, 128, 0, 0.2); 
-  border-radius: 50%; 
+  background-color: rgba(0, 128, 0, 0.2);
+  border-radius: 50%;
 }
 .slick-dots li button::after {
   content: none;
@@ -163,16 +173,15 @@ body.no-scroll {
   background-color: transparent;
   border: none;
   width: 14px;
-  height: 25px; 
+  height: 25px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .slick-prev {
-  background-image: url('../images/arr-prev.svg');
+  background-image: url("../images/arr-prev.svg");
   left: 20%;
-
 }
 .slick-next {
-  background-image: url('../images/arr-next.svg');
+  background-image: url("../images/arr-next.svg");
   right: 20%;
 }
