@@ -34,7 +34,9 @@
       bottom: -120px;
       left: 0;
       background: url('../images/streams-revers.png') no-repeat center/cover;
-
+      @media (max-width: 992px) {
+        display: none;
+      }
     }
     @media (max-width:992px) {
       background: transparent;
