@@ -115,4 +115,13 @@ $(document).ready(function() {
   if ($(".tel").length) {
     $('.tel').mask('+00 (000) 000-00-00');
   };
+
+  // Отображение пароля
+  $(".password-field svg").on("click", function() {
+    $(this).parent().find("svg").toggleClass("hide");
+      let $input = $(this).parent().find('input');
+      let currentType = $input.attr("type");
+      let newType = currentType === "password" ? "text" : "password";
+      $input.attr("type", newType);
+  });
 });

@@ -388,6 +388,10 @@ body.no-scroll {
   font-weight: 600;
 }
 
+.hide {
+  display: none !important;
+}
+
 .header {
   position: absolute;
   left: 50%;
@@ -1969,7 +1973,7 @@ body.no-scroll {
   font-weight: 400;
   line-height: 20.16px;
   text-align: center;
-  color: #22AC97;
+  color: #22ac97;
   margin-top: 16px;
 }
 
@@ -1987,6 +1991,23 @@ body.no-scroll {
   .frog__login {
     display: none;
   }
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.password-field svg path {
+  stroke: #c6c8d9;
 }
 
 /* для элемента input c type="radio" */
