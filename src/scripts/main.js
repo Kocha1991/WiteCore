@@ -108,8 +108,11 @@ $(document).ready(function() {
     $(this).parents(".select-wrapper").toggleClass("open");;
   });
 
-  // Маска для почты
+  // Маска для почты и телефона
   if ($(".email").length) {
       $(".email").inputmask("email");
+  };
+  if ($(".tel").length) {
+    $('.tel').mask('+00 (000) 000-00-00');
   };
 });
