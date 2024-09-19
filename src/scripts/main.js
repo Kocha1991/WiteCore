@@ -106,5 +106,10 @@ $(document).ready(function() {
     $(this).toggleClass("open");
     $(this).parent().find(".form__checkbox-grid").slideToggle();
     $(this).parents(".select-wrapper").toggleClass("open");;
-  })
+  });
+
+  // Маска для почты
+  if ($(".email").length) {
+      $(".email").inputmask("email");
+  };
 });
