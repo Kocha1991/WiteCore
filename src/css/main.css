@@ -1502,7 +1502,7 @@ a.btn-opacity::after,
   height: 80px;
   z-index: 10;
 }
-.offers__item__text {
+.offers .offer__item__text {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -2448,8 +2448,29 @@ a.btn-opacity::after,
     margin-top: 30px;
   }
 }
+.reviewsPage__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  column-gap: 16px;
+  row-gap: 32px;
+}
+@media (max-width: 992px) {
+  .reviewsPage__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .reviewsPage__grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+.reviewsPage__grid .reviews__slide {
+  min-height: auto;
+}
 .reviewsPage .pagination {
-  margin-top: 64px;
+  margin-top: 32px;
 }
 @media (max-width: 992px) {
   .reviewsPage .pagination {
