@@ -15,23 +15,6 @@
   @media (max-width: 580px) {
     height: 900px;
   }
-  &::before {
-    content: '';
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    top: -250px;
-    left: -400px;
-    background-image: url('../images/large-glowing-circle.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    overflow-x: hidden;
-    @media (max-width: 620px) {
-      display: none;
-    }
-  }
   &::after {
     content: '';
     width: 100%;

@@ -5,22 +5,6 @@
     text-align: center;
     margin-bottom: 15px;
   }
-  &::before {
-    content: '';
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    top: -50px;
-    left: -200px;
-    background-image: url('../images/large-glowing-circle.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    @media (max-width: 650px) {
-      display: none;
-    }
-  }
   &__wrapper {
     position: relative;
     width: 100%;

@@ -3,21 +3,6 @@
   @media (max-width: 992px) {
     padding-top: 80px;
   }
-  &::before {
-    content: '';
-    width: 1200px;
-    height: 1000px;
-    position: absolute;
-    left: -200px;
-    background-image: url('../images/large-glowing-circle.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    @media (max-width: 992px) {
-      display: none;
-    }
-  }
   &__slide {
     position: relative;
     display: flex;
