@@ -1881,6 +1881,9 @@ a.btn-opacity::after,
 .entry.registration {
   background-image: url("../images/reg_bg.png");
 }
+.entry.registration .select-wrapper::after {
+  display: none;
+}
 .entry.login {
   background-image: url("../images/login_bg.png");
 }
