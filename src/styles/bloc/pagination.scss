@@ -1,0 +1,43 @@
+.pagination {
+    @extend .frame;
+    border-width: 2.5px 0px 2.5px 0px;
+    height: 74px;
+    padding: 0 30px;
+    & .text {
+        font-family: $Font-Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20.16px;
+    }
+    &__list {
+        & li {
+            cursor: pointer;
+        }
+        & li:first-child svg, li:last-child svg {
+            @include max-md{
+                width: 30px;
+            }
+        }
+        & li:not(:first-child, :last-child) {
+            // padding: 8px 17px;
+            border: 1px solid #747474;
+            font-family: $Font-Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include max-md{
+                width: 30px;
+                height: 30px;
+            }
+            
+            &.active {
+                color: #22ac97;
+            }
+        }
+    }
+}

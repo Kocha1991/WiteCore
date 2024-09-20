@@ -6,13 +6,13 @@
     margin-top: -60px;
   }
   &::before {
-    content: '';
-    width:800px;
+    content: "";
+    width: 800px;
     height: 700px;
     position: absolute;
     top: 0px;
     left: -200px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url("../images/large-glowing-circle.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,13 +22,13 @@
     }
   }
   &::after {
-    content: '';
+    content: "";
     width: 800px;
     height: 800px;
     position: absolute;
     bottom: -100px;
     right: -300px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url("../images/large-glowing-circle.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,8 @@
     }
     &__wrapper {
       padding: 30px 15px;
-      & .btn-opacity {
+      & .btn-opacity,
+      a.btn-opacity {
         min-width: 80%;
       }
     }
@@ -93,8 +94,14 @@
       margin-bottom: 30px;
     }
   }
-  & .btn-opacity {
-    display: block;
+  & .btn-opacity,
+  a.btn-opacity {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & .all-articles {
+    max-width: 390px;
   }
 }

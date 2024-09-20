@@ -9,13 +9,13 @@
     padding: 40px 0;
   }
   &::before {
-    content: '';
+    content: "";
     width: 1200px;
     height: 1000px;
     position: absolute;
     top: -250px;
     left: -200px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url("../images/large-glowing-circle.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,13 +25,13 @@
     }
   }
   &::after {
-    content: '';
+    content: "";
     width: 1200px;
     height: 1000px;
     position: absolute;
     bottom: -250px;
     right: -600px;
-    background-image: url('../images/large-glowing-circle.png');
+    background-image: url("../images/large-glowing-circle.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,8 +96,12 @@
       text-align: left;
     }
   }
-  & .btn-opacity {
-    display: block;
+  & .btn-opacity,
+  a.btn-opacity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+    max-width: 316px;
   }
 }

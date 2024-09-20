@@ -2,14 +2,14 @@
   position: relative;
   &__casino-phone {
     display: none;
-    @media (max-width:992px) {
+    @media (max-width: 992px) {
       display: block;
       margin: 0 auto;
       margin-bottom: 15px;
       padding: 15px;
       max-width: 400px;
       height: 225px;
-      background: url('../images/casino-phone.png') no-repeat center/ contain;
+      background: url("../images/casino-phone.png") no-repeat center/ contain;
       & img {
         width: 312px;
       }
@@ -24,27 +24,27 @@
     padding: 45px;
     width: 100%;
     border-radius: 40px;
-    background: url('../images/casino.png') no-repeat center/cover;
+    background: url("../images/casino.png") no-repeat center/cover;
     margin-bottom: 65px;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 120px;
       bottom: -120px;
       left: 0;
-      background: url('../images/streams-revers.png') no-repeat center/cover;
+      background: url("../images/streams-revers.png") no-repeat center/cover;
       @media (max-width: 992px) {
         display: none;
       }
     }
-    @media (max-width:992px) {
+    @media (max-width: 992px) {
       background: transparent;
       padding: 0;
     }
     &__web-bloc {
       display: block;
-      @media (max-width:992px) {
+      @media (max-width: 992px) {
         display: none;
       }
     }
@@ -101,19 +101,19 @@
       padding: 10px;
     }
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 35px;
       left: 50%;
       transform: translateX(-50%);
       width: 130px;
       height: 110px;
-      background: url('../images/web-small.png') no-repeat center/contain;
+      background: url("../images/web-small.png") no-repeat center/contain;
       z-index: 0;
       opacity: 0.7;
       @media (max-width: 992px) {
         top: -23px;
-        background: url('../images/web-small-phone.png') no-repeat center/contain;
+        background: url("../images/web-small-phone.png") no-repeat center/contain;
       }
     }
     & img {
@@ -129,9 +129,12 @@
       text-align: center;
     }
   }
-  & .btn-opacity {
+  & .btn-opacity,
+  a.btn-opacity {
     width: 300px;
-    display: block;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

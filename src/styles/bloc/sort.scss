@@ -1,0 +1,30 @@
+.sort {
+    @extend .frame;
+    border-width: 2.5px 0px 2.5px 0px;
+    height: 74px;
+    padding: 0 30px;
+    & .form-select {
+        background: none;
+        border: none;
+        outline: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    & .text {
+        font-family: $Font-Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.16px;
+    }
+    & .form-select {
+        color: #22AC97;
+        font-weight: 500;
+        font-family: $Font-Roboto;
+        min-width: max-content;
+        & option {
+            font-size: 16x;
+            background-color: #27223c;
+        }
+    }
+}

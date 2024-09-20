@@ -31,9 +31,9 @@
     & .text-login {
         position: relative;
         z-index: 1;
-        padding: 70px 0 180px;
+        padding: 70px 0 0;
         @include max-lg {
-            padding: 50px 0 60px;
+            padding: 50px 0 0;
         }
     }
     & .success_img {

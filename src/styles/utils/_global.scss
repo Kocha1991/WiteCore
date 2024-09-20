@@ -33,7 +33,7 @@ body.no-scroll {
     line-height: 60px;
   }
   & span {
-    color: green;
+    color: #22AC97;
     font-size: 90px;
     line-height: 120px;
     text-transform: uppercase;
@@ -234,6 +234,7 @@ body.no-scroll {
   justify-content: center;
 }
 .btn-opacity span,
+a.btn-opacity span,
 .btn-main span {
   font-family: $Font-Days-One;
   font-weight: 600;
