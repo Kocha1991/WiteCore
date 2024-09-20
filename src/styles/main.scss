@@ -51,8 +51,8 @@ body {
   background: $color-body;
 }
 .section-body {
-    padding-top: 250px;
+    padding: 250px 0 155px;
     @include max-lg {
-        padding-top: 158px;
+        padding: 158px 0 50px;
     }
 }
