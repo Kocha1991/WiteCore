@@ -2069,6 +2069,7 @@ a.btn-opacity::after,
   width: 100%;
   max-width: 400px;
   font-family: "Days One", sans-serif;
+  box-shadow: none !important;
 }
 @media (max-width: 992px) {
   .form .btn-main {
