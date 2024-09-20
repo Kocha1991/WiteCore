@@ -32,21 +32,18 @@ $(document).ready(function() {
     nextArrow: '.reviews .slick-next',
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1270,
         settings: {
-          slidesToShow: 3,
-          centerMode: true,
-          centerPadding: '0',
+          variableWidth: true,
         }
       },
-      {
-        breakpoint: 680,
-        settings: {
-          slidesToShow: 1
-        }
-      }
     ],
   });
+  // $('.reviews__slider').on('afterChange', function(event, slick, currentSlide){
+  //   $('.slick-slide').removeClass('prev-slide next-slide');
+  //   $('.slick-current').prev().addClass('prev-slide');
+  //   $('.slick-current').next().addClass('next-slide');
+  // });
   
   $('.our-blog__slider').slick({
     dots: true,
