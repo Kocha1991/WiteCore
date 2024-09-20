@@ -78,6 +78,7 @@
   }
   &__item {
     position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,14 +93,64 @@
     backdrop-filter: blur(10px);
     cursor: pointer;
     transition: $transition;
+    @media (max-width: 992px) {
+      width: 230px;
+      padding: 10px;
+    }
+    @media (max-width: 510px) {
+      width: 100%;
+    }
+    &.offers__item--link {
+      box-shadow: $shadow-frame;
+      background: linear-gradient(-55deg, #DB2EFE 8.22%, #6C37B1 57.47%, #430877 125.48%);
+      & h2 {
+        font-family: AA Duke;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0.005em;
+        text-align: center;
+        text-transform: uppercase;
+        @media (max-width: 992px) {
+          font-saize: 40px;
+          line-height: 40px;
+        }
+      } 
+      & span {
+        font-family: AA Duke;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 64px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 0.5px #fff;
+        text-stroke: 0.5px #fff;
+        @media (max-width: 992px) {
+          font-saize: 40px;
+          line-height: 40px;
+        }
+      }
+      &::before {
+        content: '';
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: auto;
+        left: auto;
+        bottom: -30px;
+        right: -66px;
+        background: url('../images/hand-icon.png') no-repeat center/cover;
+        opacity: 1;
+        z-index: -1;
+      }
+    }
     &:hover {
       transition: $transition;
       scale: 105%;
     }
-    @media (max-width: 992px) {
-      width: 189px;
-      padding: 10px;
-    }
+    
     &:before {
       content: "";
       position: absolute;
@@ -130,7 +181,7 @@
     }
   }
   & .btn-opacity,
-  a.btn-opacity {
+  a .btn-opacity {
     width: 300px;
     margin: 0 auto;
     display: flex;

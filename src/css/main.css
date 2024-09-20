@@ -1455,6 +1455,7 @@ a.btn-opacity::after,
 }
 .offers__item {
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1469,15 +1470,70 @@ a.btn-opacity::after,
   cursor: pointer;
   transition: 0.3s all ease-in-out;
 }
+@media (max-width: 992px) {
+  .offers__item {
+    width: 230px;
+    padding: 10px;
+  }
+}
+@media (max-width: 510px) {
+  .offers__item {
+    width: 100%;
+  }
+}
+.offers__item.offers__item--link {
+  box-shadow: 0 0 10px 10px rgba(216, 88, 248, 0.3);
+  background: linear-gradient(-55deg, #DB2EFE 8.22%, #6C37B1 57.47%, #430877 125.48%);
+}
+.offers__item.offers__item--link h2 {
+  font-family: AA Duke;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.005em;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .offers__item.offers__item--link h2 {
+    font-saize: 40px;
+    line-height: 40px;
+  }
+}
+.offers__item.offers__item--link span {
+  font-family: AA Duke;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+  text-stroke: 0.5px #fff;
+}
+@media (max-width: 992px) {
+  .offers__item.offers__item--link span {
+    font-saize: 40px;
+    line-height: 40px;
+  }
+}
+.offers__item.offers__item--link::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: -30px;
+  right: -66px;
+  background: url("../images/hand-icon.png") no-repeat center/cover;
+  opacity: 1;
+  z-index: -1;
+}
 .offers__item:hover {
   transition: 0.3s all ease-in-out;
   scale: 105%;
-}
-@media (max-width: 992px) {
-  .offers__item {
-    width: 189px;
-    padding: 10px;
-  }
 }
 .offers__item:before {
   content: "";
@@ -1510,7 +1566,7 @@ a.btn-opacity::after,
   text-align: center;
 }
 .offers .btn-opacity,
-.offers a.btn-opacity {
+.offers a .btn-opacity {
   width: 300px;
   margin: 0 auto;
   display: flex;
