@@ -1,5 +1,4 @@
 .reviewsPage {
-
     & .sort {
         margin-top: 64px;
         @include max-lg{
@@ -7,12 +6,28 @@
         }
         
     }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+        column-gap: 16px;
+        row-gap: 32px;
+        @include max-lg{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include max-md{
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+        & .reviews__slide {
+            min-height: auto;
+        }
+    }
     & .pagination {
-        margin-top: 64px;
+        margin-top: 32px;
         @include max-lg{
             margin-top: 30px;
         }
         
     }
-    
 }

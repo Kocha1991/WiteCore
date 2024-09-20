@@ -1558,7 +1558,7 @@ a.btn-opacity::after,
   height: 80px;
   z-index: 10;
 }
-.offers__item__text {
+.offers .offer__item__text {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 600;
