@@ -93,8 +93,13 @@ body.no-scroll {
   line-height: 70.8px;
   color: #fff;
   & span {
-    color: #22AC97;
+    color: #22ac97;
   }
+  @media (max-width: 992px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
 }
 .p-b {
   padding-bottom: 120px;
@@ -227,10 +232,11 @@ body.no-scroll {
   justify-content: center;
 }
 .btn-opacity span,
-.btn-main span{
+.btn-main span {
   font-family: $Font-Days-One;
   font-weight: 600;
 }
 .hide {
   display: none !important;
 }
+
